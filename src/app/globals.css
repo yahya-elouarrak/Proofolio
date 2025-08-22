@@ -1,2 +1,125 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+@import "tailwindcss";
+/* Minimal CSS Reset */
+html,body{margin:0;padding:0;box-sizing:border-box;}
+*,*:before,*:after{box-sizing:inherit;}
+body{background:var(--background);color:var(--foreground);font-family:var(--font-giest,sans-serif);line-height:1;}
+ol,ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body{
+  overscroll-behavior: none;
+}
+:root {
+  --background: #151726;
+  --foreground: #e7eafd;
+  --card: #23244a;
+  --card-foreground: #e7eafd;
+  --popover: #23244a;
+  --popover-foreground: #e7eafd;
+  --primary: #b3a6ff;
+  --primary-foreground: #151726;
+  --secondary: #353a54;
+  --secondary-foreground: #e0e6ff;
+  --muted: #23264d;
+  --muted-foreground: #b0b3c6;
+  --accent: #2d3057;
+  --accent-foreground: #e7eafd;
+  --destructive: #ff6a8a;
+  --destructive-foreground: #ffffff;
+  --border: #353a54;
+  --input: #353a54;
+  --ring: #b3a6ff;
+  --chart-1: #b3a6ff;
+  --chart-2: #7e8ac2;
+  --chart-3: #7dc6fa;
+  --chart-4: #4db6a2;
+  --chart-5: #f47be3;
+  --sidebar: #23244a;
+  --sidebar-foreground: #e7eafd;
+  --sidebar-primary: #b3a6ff;
+  --sidebar-primary-foreground: #151726;
+  --sidebar-accent: #2d3057;
+  --sidebar-accent-foreground: #e7eafd;
+  --sidebar-border: #353a54;
+  --sidebar-ring: #b3a6ff;
+  --font-geist: "Geist", sans-serif;
+  --font-mono: monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 4px 10px 0px #23264d0f;
+  --shadow-xs: 0px 4px 10px 0px #23264d0f;
+  --shadow-sm: 0px 4px 10px 0px #23264d1f, 0px 1px 2px -1px #23264d1f;
+  --shadow: 0px 4px 10px 0px #23264d1f, 0px 1px 2px -1px #23264d1f;
+  --shadow-md: 0px 4px 10px 0px #23264d1f, 0px 2px 4px -1px #23264d1f;
+  --shadow-lg: 0px 4px 10px 0px #23264d1f, 0px 4px 6px -1px #23264d1f;
+  --shadow-xl: 0px 4px 10px 0px #23264d1f, 0px 8px 10px -1px #23264d1f;
+  --shadow-2xl: 0px 4px 10px 0px #23264d4d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-geist: var(--font-geist);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    180deg,
+    var(--chart-1),
+    var(--chart-2),
+    var(--chart-3),
+    var(--chart-4),
+    var(--chart-5) 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

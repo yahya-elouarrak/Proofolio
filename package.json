@@ -8,9 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.34.1",
+    "clsx": "^2.1.1",
+    "motion": "^12.23.12",
+    "next": "15.5.0",
+    "pdf-parse": "^1.1.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.0"
+    "react-dropzone": "^14.3.8",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
