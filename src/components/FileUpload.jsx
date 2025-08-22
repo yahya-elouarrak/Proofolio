@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import React, { useRef, useState } from "react";
 import { motion } from "motion/react";
-import { IconUpload , IconTrash} from "@tabler/icons-react";
+import { IconUpload ,} from "@tabler/icons-react";
 import { useDropzone } from "react-dropzone";
 
 const idx = 0;
@@ -57,7 +57,7 @@ export const FileUpload = ({
       <motion.div
         onClick={handleClick}
         whileHover="animate"
-        className="p-10 group/file block rounded-lg cursor-pointer w-full relative overflow-hidden">
+        className=" group/file block rounded-lg cursor-pointer w-full relative overflow-hidden">
         <input
         accept=".pdf,.txt,text/plain,application/pdf"
           multiple={false}
@@ -68,11 +68,11 @@ export const FileUpload = ({
           className="hidden" />
         <div className="flex flex-col items-center justify-center gap-y-2">
           <p
-            className="relative z-20 font-sans font-bold text-neutral-700 dark:text-neutral-300 text-lg">
+            className="relative z-20 font-geist font-bold text-foreground text-lg">
             Upload your resume
           </p>
           <p
-            className="relative z-20 font-sans font-normal text-foreground/70 text-sm ">
+            className="relative z-20 font-geist font-normal text-foreground/70 text-sm ">
             Drag or drop your file here or click to upload
           </p>
           <div className="relative w-full mt-4 max-w-xl mx-auto">
@@ -82,7 +82,7 @@ export const FileUpload = ({
                   key={"file" + idx}
                   layoutId={idx === 0 ? "file-upload" : "file-upload-" + idx}
                   className={cn(
-                    "relative overflow-hidden z-40 bg-white dark:bg-neutral-900 flex flex-col items-start justify-start md:h-24 p-4 mt-4 w-full mx-auto rounded-md",
+                    "relative overflow-hidden z-40 bg-card-foreground flex flex-col items-start justify-start md:h-24 p-4 mt-4 w-full mx-auto rounded-md",
                     "shadow-sm"
                   )}>
                   <div className="flex justify-between w-full items-center gap-4">
