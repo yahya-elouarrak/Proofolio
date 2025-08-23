@@ -23,7 +23,7 @@ body{
   --popover: hsl(240 27.7778% 14.1176%);
   --popover-foreground: hsl(240 48.7179% 92.3529%);
   --primary: hsl(251.2500 100% 78.0392%);
-  --primary-foreground: hsl(240 26.8293% 8.0392%);
+  --primary-foreground: #0f0f1a;
   --secondary: hsl(242.8571 32.8125% 25.0980%);
   --secondary-foreground: hsl(241.9672 100% 88.0392%);
   --muted: hsl(240 33.3333% 20%);
@@ -39,7 +39,7 @@ body{
   --chart-2: hsl(230.4878 44.0860% 63.5294%);
   --chart-3: hsl(206.7123 89.0244% 67.8431%);
   --chart-4: hsl(174.2857 41.8327% 50.7843%);
-  --chart-5: hsl(325.5224 100.0000% 73.7255%);
+  --chart-5: #ff79c6;
   --sidebar: hsl(240 27.7778% 14.1176%);
   --sidebar-foreground: hsl(240 48.7179% 92.3529%);
   --sidebar-primary: hsl(251.2500 100% 78.0392%);
@@ -48,7 +48,7 @@ body{
   --sidebar-accent-foreground: hsl(240 48.7179% 92.3529%);
   --sidebar-border: hsl(240 26.1538% 25.4902%);
   --sidebar-ring: hsl(251.2500 100% 78.0392%);
-  --font-sans: Inter, sans-serif;
+  --font-geist : "Geist" , sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: JetBrains Mono, monospace;
   --radius: 0.5rem;
@@ -60,6 +60,7 @@ body{
   --shadow-lg: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 4px 6px -1px hsl(240 30% 25% / 0.12);
   --shadow-xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 8px 10px -1px hsl(240 30% 25% / 0.12);
   --shadow-2xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.30);
+
 
 }
 

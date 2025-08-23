@@ -1,0 +1,76 @@
+{
+  "basics": {
+    "name": "string",
+    "label": "string",
+    "email": "string",
+    "phone": "string",
+    "location": {
+      "city": "string",
+      "region": "string",
+      "country": "string"
+    },
+    "summary": "string",
+    "linkedin": "string",
+    "github": "string",
+    "portfolio": "string"
+  },
+  "skills": [
+    {
+      "name": "string", 
+      "keywords": ["string"] 
+    }
+  ],
+  "experience": [
+    {
+      "company": "string",
+      "position": "string",
+      "location": "string",
+      "startDate": "YYYY-MM",
+      "endDate": "YYYY-MM or 'Present'",
+      "summary": "string",
+      "highlights": ["string"] 
+    }
+  ],
+  "education": [
+    {
+      "institution": "string",
+      "degree": "string",
+      "field": "string",
+      "startDate": "YYYY-MM",
+      "endDate": "YYYY-MM",
+      "location": "string",
+      "gpa": "string"
+    }
+  ],
+  "projects": [
+    {
+      "name": "string",
+      "description": "string",
+      "url": "string",
+      "technologies": ["string"],
+      "highlights": ["string"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "string",
+      "issuer": "string",
+      "date": "YYYY-MM",
+      "url": "string"
+    }
+  ],
+  "languages": [
+    {
+      "language": "string",
+      "fluency": "string" 
+    }
+  ],
+  "interests": ["string"],
+  "references": [
+    {
+      "name": "string",
+      "relationship": "string",
+      "contact": "string"
+    }
+  ]
+}

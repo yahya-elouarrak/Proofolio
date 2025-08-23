@@ -1,12 +1,14 @@
 import NavBar from "@/components/NavBar";
 import { WavyBackground } from "@/components/Background";
 import ButtonMain from "@/components/ButtonMain";
+import { CompareDemo } from "@/components/ui/Comparer";
+import Link from "next/link";
 
 
 export default function Page() {
   return (
     <main className="font-geist">
-      <section className="h-screen w-screen relative overflow-hidden">
+      {/* <section className="h-screen w-screen relative overflow-x-hidden">
         <NavBar/>
         <WavyBackground   containerClassName={"z-[-1] "} className={"fixed "}
           colors={
@@ -19,14 +21,13 @@ export default function Page() {
             <span>Turn your resume into a</span>
             <span><span className="gradient-text">living</span> website</span></h1>
             <p className=" tracking-widest capitalize text-muted-foreground text-lg">Your story deserves more than just a PDF</p>
-          <div>
+          <Link href={"/trial"} className="z-10">
             <ButtonMain text={"try now"}/>
-          </div>
-          <div className="w-3/6 backdrop-blur-md h-84 rounded-t-2xl ">
-          </div>
+          </Link>
+          <CompareDemo />
           </div>
 
-          </section>
+          </section> */}
       </main>
   );
 }
