@@ -138,3 +138,75 @@ body{
     @apply border-border outline-ring/50;}
   body {
     @apply bg-background text-foreground;}}
+
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Alternative method - hide scrollbar but keep functionality */
+.hide-scrollbar {
+  /* For WebKit browsers */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Hide scrollbar on specific element (like a div) */
+.scrollable-container {
+  overflow-y: scroll; /* Enable scrolling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Alternative approach - make scrollbar transparent */
+.transparent-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Hide horizontal scrollbar only */
+.hide-horizontal-scrollbar {
+  overflow-x: hidden;
+}
+
+/* Hide vertical scrollbar only */
+.hide-vertical-scrollbar {
+  overflow-y: hidden;
+}
+
+/* Custom styled invisible scrollbar (maintains layout) */
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* OR keep scrolling but hide scrollbars */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

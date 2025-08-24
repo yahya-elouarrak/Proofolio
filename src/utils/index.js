@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   baseURL: "https://api.aimlapi.com/v1",
-  apiKey: "3756b0a396bf4c69a737a67d103cd715"
+  apiKey: "3756b0a396bf4c69a737a67d103cd715" //these are just for testing (too lazy to use an .env file🤡)
 });
 
 export async function getResumeJson(resumeText,) {

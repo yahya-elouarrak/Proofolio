@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main className="font-geist">
-      {/* <section className="h-screen w-screen relative overflow-x-hidden">
+      <section className="h-screen w-screen relative overflow-x-hidden">
         <NavBar/>
         <WavyBackground   containerClassName={"z-[-1] "} className={"fixed "}
           colors={
@@ -27,7 +27,7 @@ export default function Page() {
           <CompareDemo />
           </div>
 
-          </section> */}
+          </section>
       </main>
   );
 }

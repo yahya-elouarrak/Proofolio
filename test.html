@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walid Oumoulilte - Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --primary: #3b82f6; /* Tailwind blue-500 */
+    }
+
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--card);
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+    .contact {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .contact a {
+      margin: 0 0.5rem;
+      font-weight: 500;
+    }
+
+    /* Section headings */
+    section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--card);
+      color: var(--primary);
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .skill {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #222;
+      outline: 1px solid #1f2937;
+    }
+    .skill h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    .skill p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #222;
+      border-radius: 10px;
+      background: var(--card);
+      outline: 1px solid #1f2937;
+    }
+    .job h3 {
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .job span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .job p {
+      margin: 0.5rem 0;
+      color: var(--muted);
+    }
+    .job ul {
+      margin-left: 1.2rem;
+      list-style: circle;
+    }
+    .job ul li {
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-top: 0.2rem;
+    }
+
+    /* Interests */
+    .interests {
+      padding: 1rem;
+      border: 1px solid #222;
+      border-radius: 10px;
+      background: var(--card);
+      outline: 1px solid #1f2937;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--card);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Walid Oumoulilte</h1>
+    <h2>Front-end React Developer</h2>
+    <p class="contact">
+      <a href="mailto:walid.oumoulilte@gmail.com">walid.oumoulilte@gmail.com</a> |
+      <a href="tel:+212698186439">+212698186439</a> |
+      Beni-Mellal, Morocco
+    </p>
+    <p class="contact">
+      <a href="https://www.linkedin.com/in/walid101" target="_blank">LinkedIn</a> •
+      <a href="https://github.com/walid-hud" target="_blank">GitHub</a> •
+      <a href="https://walidoumoulilte.vercel.app" target="_blank">Portfolio</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a self-taught front-end developer specializing in React and a general programming enthusiast. 
+      Proficient in standard front-end technologies and familiar with several backend technologies.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>Front-End</h3>
+        <p>React, React-Router, Redux, Bootstrap, Tailwind CSS, Figma</p>
+      </div>
+      <div class="skill">
+        <h3>Back-End</h3>
+        <p>Express, NextJS</p>
+      </div>
+      <div class="skill">
+        <h3>Databases</h3>
+        <p>MongoDB, MySQL</p>
+      </div>
+      <div class="skill">
+        <h3>Cloud & DevOps</h3>
+        <p>Docker, Linux</p>
+      </div>
+      <div class="skill">
+        <h3>Testing & Tools</h3>
+        <p>Jest, Git, Vite</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <h3>Slim-car rental agency <span>— React developer (intern)</span></h3>
+      <span>Remote | Dec 2024 - Feb 2025</span>
+      <p>Developed a comprehensive car rental website with admin panel using NextJS, Tailwind CSS, Google Maps API, and SQLite.</p>
+      <ul>
+        <li>Built a car rental website with reservation management</li>
+        <li>Admin panel for cars, users, and bookings</li>
+        <li>Used NextJS, Tailwind CSS, Google Maps API, SQLite</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Sté Electro Riad AM <span>— React developer (intern)</span></h3>
+      <span>Morocco | Sep 2024 - Nov 2024</span>
+      <p>Designed and implemented an e-commerce site with pre-order support using React, Redux, and Material UI.</p>
+      <ul>
+        <li>E-commerce site with pre-order support</li>
+        <li>Used React, React-Router, Redux, Material UI</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Upwork (Freelancer) <span>— Front-end developer</span></h3>
+      <span>Remote | Dec 2023 - Present</span>
+      <p>Built a social media dashboard for managing accounts, scheduling posts, and monitoring analytics using React, Material UI, and ChartJS.</p>
+      <ul>
+        <li>Social media dashboard for account management, scheduling, analytics</li>
+        <li>Used React, Material UI, ChartJS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <div class="interests">
+      Front-end development, React, UI/UX design, Web technologies
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Walid Oumoulilte — Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>

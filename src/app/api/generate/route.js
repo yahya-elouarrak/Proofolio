@@ -1,8 +1,16 @@
-// app/api/generate/route.js
+import OpenAI from 'openai';
 import { NextResponse } from 'next/server';
 import PdfParse from 'pdf-parse';
+import { getResumeJson } from '@/utils';
+import { generatePortfolio } from '@/utils/generate';
+
+
 
 export async function POST(request) {
+  const openai = new OpenAI({
+    baseURL: "https://api.aimlapi.com/v1",
+    apiKey: "e917c0cf177a4bb5a4129d0c832b1eeb" //these are just for testing (too lazy to use an .env file🤡)
+  });
   try {
     // Get the form data
     const formData = await request.formData();
@@ -18,17 +26,20 @@ export async function POST(request) {
     const buffer = Buffer.from(arrayBuffer);
 
     // Parse PDF and extract text
-    const pdfData = await PdfParse(buffer);
+    const {text} = await PdfParse(buffer);
 
     // Log the extracted text
-    console.log('Extracted PDF Text:');
-    console.log(pdfData.text);
+    console.log(text);
 
-    return NextResponse.json({ 
-      success: true, 
-      message: 'PDF parsed successfully',
-      textLength: pdfData.text.length,
-      pages: pdfData.numpages
+    const resumeJson = await getResumeJson(text, openai)
+    // const portfolioCode = await generatePortfolio(resumeJson, openai)
+
+    console.log(resumeJson)
+
+    return NextResponse.json({
+      success: true,
+      message: 'portfolio generated successfully',
+      code:portfolioCode
     });
 
   } catch (error) {
@@ -36,3 +47,6 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Failed to parse PDF' }, { status: 500 });
   }
 }
+
+
+

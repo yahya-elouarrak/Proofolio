@@ -3,7 +3,7 @@ import OpenAI from "openai";
 // Ensure you set OPENAI_API_KEY in your environment (.env.local)
 const openai = new OpenAI({
    baseURL: "https://api.aimlapi.com/v1",
-    apiKey: "0d18cb327d434b3cbb3559af3ef2f74a"
+    apiKey: "0d18cb327d434b3cbb3559af3ef2f74a" //these are just for testing (too lazy to use an .env file🤡)
             
 });
 
